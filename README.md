@@ -1,3 +1,5 @@
 --- Code-Editor-Web-Application ---
 >> Technical skills used : HTML, CSS and JavaScript
->> Created a structure using html and style with CSS   
+>> Firstly created the structure of body using HTML 
+>> Styled the structure with CSS using elements and classes defined in HTML
+>> Gave some functionality using JavaScript and made web application interactive 
