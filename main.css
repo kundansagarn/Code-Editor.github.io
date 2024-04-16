@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-color: #555;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+
+.left, .right{
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 29%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+}
+
+#output{
+    width: 100%;
+    height: 96%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+label i{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    height: 30px;
+}

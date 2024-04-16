@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" class="css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Code Editor</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <label><i class="ri-html5-fill"></i> HTML</label>
+            <textarea id="html_box" onkeyup="run()"></textarea>
+
+            <label><i class="ri-css3-fill"></i> CSS</label>
+            <textarea id="css_box" onkeyup="run()"></textarea>
+
+            <label><i class="ri-javascript-fill"></i> JavaScript</label>
+            <textarea id="js_box" onkeyup="run()"></textarea>
+
+        </div>
+
+        <div class="right">
+
+            <label><i class="ri-play-fill"></i> Output</label>
+            <iframe id="output"></iframe>
+
+        </div>
+
+    </div>
+
+<script>
+function run(){
+
+    let htmlbox = document.getElementById("html_box").value;
+    let cssbox = document.getElementById("css_box").value;
+    let jsbox = document.getElementById("js_box").value;
+    let output = document.getElementById("output");
+
+    output.contentDocument.body.innerHTML = htmlbox + "<style>" + cssbox + "</style>";
+    output.contentWindow.eval(jsbox);
+
+}
+
+</script>
+
+</body>
+</html>
